@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Table | Luxe & Ember Café — Reserve Your Experience</title>
+  <meta name="description" content="Reserve your seat at Luxe & Ember. Whether it's for a quiet morning roast or a cinematic evening glow, pick your mood and book your table." />
+  <meta name="keywords" content="Luxe & Ember reservations, book cafe table Delhi, Connaught Place booking, cafe table reservation" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Book a Table | Luxe & Ember Café" />
+  <meta property="og:description" content="Pick the mood, then reserve the seat. Join us at Luxe & Ember." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand">Luxe & Ember</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta active">Book a Table</a></li>
+  </ul>
+  <a href="tel:+911143556677" class="nav-phone"><i class="fas fa-phone"></i><span>+91 11 4355 6677</span></a>
+  <button class="mode-toggle" id="modeToggle"><i class="fas fa-sun" id="modeIcon"></i></button>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- RESERVATION HERO -->
+<section class="res-hero">
+  <div class="res-hero-left">
+    <p class="label-text fade-in">Reservation Portal</p>
+    <h1 class="fade-in">Book Your<br/><em>Experience</em></h1>
+    <p class="res-sub fade-in">Reserve a table through a more atmospheric, café-style booking board — not a plain form. Choose your moment, your vibe, and your table.</p>
+
+    <div class="res-live-strip fade-in">
+      <span>4 tables open</span>
+      <span class="res-dot">·</span>
+      <span>Walk-ins Welcome</span>
+    </div>
+
+    <div class="res-mode-switch fade-in">
+      <button type="button" class="res-mode-btn active" data-mode-set="day">Day</button>
+      <button type="button" class="res-mode-btn" data-mode-set="night">Night</button>
+    </div>
+
+    <div class="res-story-grid fade-in">
+      <div class="res-story-card warm">
+        <span class="rs-label">Best for</span>
+        <span class="rs-handle">Slow brunch, date nights, celebrations</span>
+      </div>
+      <div class="res-story-card cool">
+        <span class="rs-label">Experience</span>
+        <span class="rs-handle">Daylight calm → evening glow</span>
+      </div>
+      <div class="res-story-card dark">
+        <span class="rs-label">Reservation vibe</span>
+        <span class="rs-handle">Elegant, relaxed, unforgettable</span>
+      </div>
+    </div>
+
+    <div class="res-ambience-strip fade-in">
+      <span class="res-ambience-kicker">What to expect</span>
+      <p>Soft lighting, curated music, and a calm table pace designed for long conversations and slow sips.</p>
+    </div>
+
+    <div class="res-mini-grid fade-in">
+      <div class="res-mini-card">
+        <i class="fas fa-couch"></i>
+        <span>Quiet corners</span>
+      </div>
+      <div class="res-mini-card">
+        <i class="fas fa-mug-hot"></i>
+        <span>Slow sipping</span>
+      </div>
+      <div class="res-mini-card">
+        <i class="fas fa-lightbulb"></i>
+        <span>Warm glow</span>
+      </div>
+    </div>
+
+    <div class="res-note fade-in">
+      <i class="fas fa-moon"></i>
+      <p>Tables are held for 15 minutes after your booking time. For larger groups, add a note below.</p>
+    </div>
+
+    <div class="res-creative-outro fade-in">
+      <div class="outro-content">
+        <span class="outro-label">A Note from Our Table</span>
+        <h3 class="outro-title">Thank you for choosing <br><span class="brand-script">Luxe & Ember</span></h3>
+        <p class="outro-text">We believe every reservation is a story waiting to be told. Whether it's a quiet morning pour or an evening glow, we prepare your table with intentional care.</p>
+        <div class="outro-divider">
+           <span class="dot"></span>
+           <span class="line"></span>
+           <span class="dot"></span>
+        </div>
+        <p class="outro-hint">Leave any special requests in the note — <br><em>we’ll make it unforgettable.</em></p>
+      </div>
+      <div class="outro-bg-decor"></div>
+    </div>
+
+    <!-- SUCCESS TOAST -->
+    <div class="success-toast" id="successToast">
+      <i class="fas fa-check-circle"></i>
+      <span>Table booked! See you soon ☕ We'll confirm via email.</span>
+    </div>
+  </div>
+
+  <div class="res-hero-right">
+    <div class="res-board">
+      <div class="res-board-head">
+        <div>
+          <span class="res-board-kicker">Table Booking</span>
+          <h2>Pick the mood, then reserve the seat.</h2>
+        </div>
+        <div class="res-board-chip"><i class="fas fa-leaf"></i><span>Curated seating</span></div>
+      </div>
+
+      <div class="res-availability">
+        <div><span>Today</span><strong>4 tables open</strong></div>
+        <div><span>Status</span><strong>Open Daily</strong></div>
+        <div><span>Avg wait</span><strong>12 min</strong></div>
+      </div>
+
+      <div class="res-form" id="resForm">
+        <div class="rf-row">
+          <div class="rf-group">
+            <label>Guest Name</label>
+            <input type="text" id="fname" placeholder="Aryan Kapoor"/>
+            <span class="rf-err" id="fnameErr">Please enter your name</span>
+          </div>
+          <div class="rf-group">
+            <label>Email Address</label>
+            <input type="email" id="femail" placeholder="you@example.com"/>
+            <span class="rf-err" id="femailErr">Please enter a valid email</span>
+          </div>
+        </div>
+        <div class="rf-row">
+          <div class="rf-group">
+            <label>Date</label>
+            <input type="date" id="fdate"/>
+            <span class="rf-err" id="fdateErr">Please select a date</span>
+          </div>
+          </div>
+
+          <div class="rf-row">
+            <div class="rf-group">
+              <label>Arriving At</label>
+              <input type="time" id="fstart_time" value="18:30"/>
+            </div>
+            <div class="rf-group">
+              <label>Leaving By</label>
+              <input type="time" id="fend_time" value="20:00"/>
+            </div>
+          </div>
+        <div class="rf-group">
+          <label>Party Size</label>
+          <input type="text" id="fparty" placeholder="Table for 2"/>
+          <span class="rf-err" id="fpartyErr">Please enter party size</span>
+        </div>
+        <div class="rf-group">
+          <label>Occasion <span class="optional">(optional)</span></label>
+            <input type="hidden" id="foccasion" value="Just Us"/>
+            <div class="chip-group res-chip-grid" data-chip-group="foccasion">
+              <button type="button" class="chip-btn" data-chip-value="Birthday">Birthday</button>
+              <button type="button" class="chip-btn" data-chip-value="Anniversary">Anniversary</button>
+              <button type="button" class="chip-btn" data-chip-value="Date Night">Date Night</button>
+              <button type="button" class="chip-btn" data-chip-value="Business">Business</button>
+              <button type="button" class="chip-btn" data-chip-value="Celebration">Celebration</button>
+              <button type="button" class="chip-btn active" data-chip-value="Just Us">Just Us</button>
+            </div>
+        </div>
+        <div class="rf-group">
+          <label>Special Requests <span class="optional">(optional)</span></label>
+          <textarea id="fnote" placeholder="Dietary needs, accessibility requests, large-group details, or any special instructions..." rows="4"></textarea>
+        </div>
+        <button class="pill-btn filled res-submit" onclick="submitReservation()">
+          Confirm Reservation
+        </button>
+      </div>
+
+      <div class="res-side-stack">
+        <div class="res-map-card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Luxe & Ember Café location"/>
+          <div class="res-location-badge">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Connaught Place, New Delhi</span>
+          </div>
+        </div>
+
+        <div class="res-info-card">
+          <h4>Hours of Service</h4>
+          <div class="res-hours">
+            <div class="res-hour-row">
+              <span>Day Phase</span>
+              <span class="res-time">08:00 — 16:00</span>
+            </div>
+            <div class="res-hour-row">
+              <span>Night Phase</span>
+              <span class="res-time night-text">16:00 — 02:00</span>
+            </div>
+          </div>
+          <div class="res-contact-icons">
+            <a href="#" class="res-icon-btn" title="Share"><i class="fas fa-share-alt"></i></a>
+            <a href="tel:+911123456789" class="res-icon-btn" title="Call"><i class="fas fa-phone"></i></a>
+            <a href="https://maps.google.com" class="res-icon-btn" title="Directions" target="_blank"><i class="fas fa-directions"></i></a>
+          </div>
+        </div>
+
+        <div class="res-social-row">
+          <div class="res-social-card warm">
+            <span class="rs-label">Instagram</span>
+            <span class="rs-handle">@luxeember.cafe</span>
+          </div>
+          <div class="res-social-card cool">
+            <span class="rs-label">Hashtag</span>
+            <span class="rs-handle">#EmberMoments</span>
+          </div>
+        </div>
+
+        <div class="res-gmap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9046986857177!2d77.2167!3d28.6315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47193f3f5!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1234567890"
+            width="100%" height="220" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Luxe & Ember Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHATBOT -->
+<div class="chatbot-wrap" id="chatbot">
+  <button class="chat-fab" id="chatToggle"><i class="fas fa-comment-dots"></i><span class="fab-ping"></span></button>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-head"><div class="chat-av">☕</div><div><p class="chat-n">Ember</p><p class="chat-s">Café Assistant · Online</p></div><button class="chat-x" id="chatClose"><i class="fas fa-times"></i></button></div>
+    <div class="chat-msgs" id="chatMsgs"><div class="cmsg bot"><p>Welcome to Luxe & Ember ✨ Ask me about our <strong>menu</strong>, <strong>hours</strong>, <strong>location</strong>, or <strong>booking</strong>!</p></div></div>
+    <div class="chat-inp"><input type="text" id="chatInput" placeholder="Ask me anything…"/><button id="chatSend"><i class="fas fa-paper-plane"></i></button></div>
+  </div>
+</div>
+
+<button class="mode-float" id="modeFloat"><i class="fas fa-sun" id="modeFloatIcon"></i><span id="modeFloatText">Switch to Night</span></button>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand"><p class="footer-logo">Luxe & Ember</p><p class="footer-tagline">Redefining café culture. Open from dawn to deep into the night.</p><p class="footer-est">Established 2019</p></div>
+    <div class="footer-nav"><p class="footer-nav-title">Navigate</p><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="contact.html">Book</a></div>
+    <div class="footer-nav"><p class="footer-nav-title">Connect</p><a href="#">Instagram</a><a href="#">Twitter</a><a href="#">Spotify</a><a href="#">Newsletter</a></div>
+    <div class="footer-nav"><p class="footer-nav-title">Address</p><p class="footer-addr">12, Inner Circle<br/>Connaught Place<br/>New Delhi - 110001</p><p class="footer-addr"><i class="fas fa-phone" style="margin-right:8px;font-size:0.8rem;color:var(--accent)"></i>+91 11 4355 6677</p><p class="footer-addr">Mon–Sun: 8AM – 2AM</p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Luxe & Ember. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

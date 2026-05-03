@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe & Ember Café | Artisanal Coffee & Cinematic Cocktails in New Delhi</title>
+  <meta name="description" content="Discover Luxe & Ember Café — a dual-soul sanctuary in Connaught Place. Experience artisanal coffee by day and cinematic cocktails by night. A sensory collage of light and shadow." />
+  <meta name="keywords" content="Luxe & Ember, luxury cafe New Delhi, artisanal coffee, cinematic cocktails, Connaught Place cafe, best coffee Delhi, theme cafe" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://archanathakur86.github.io/Ember-cafe/" />
+  <meta property="og:title" content="Luxe & Ember Café | Artisanal Coffee & Cinematic Cocktails" />
+  <meta property="og:description" content="Two worlds. One glass door. Experience the shift from day to dusk at New Delhi's premier boutique cafe." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Luxe & Ember Café | Artisanal Coffee & Cinematic Cocktails" />
+  <meta property="twitter:description" content="Experience the shift from day to dusk at Luxe & Ember Café." />
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- PREMIUM EFFECTS -->
+  <div id="cursorSpotlight"></div>
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand"><span class="brand-script">Luxe</span> <span class="brand-serif">&amp;
+        Ember</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a Table</a></li>
+    </ul>
+    <a href="tel:+911143556677" class="nav-phone"><i class="fas fa-phone"></i><span>+91 11 4355 6677</span></a>
+    <button class="mode-toggle" id="modeToggle" title="Toggle Day/Night">
+      <i class="fas fa-sun" id="modeIcon"></i>
+    </button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-decor sketch-left" aria-hidden="true"></div>
+    <div class="hero-decor leaves-corner" aria-hidden="true"></div>
+
+    <div class="hero-text-wrap">
+      <p class="eyebrow">Welcome to</p>
+      <h1 class="hero-headline"><span class="brand-script">Luxe</span> <span class="brand-serif">&amp; Ember</span></h1>
+      <h2 class="hero-large">Savor Your<br /><span class="hero-highlight">Favorite Meals</span><br />With Loved Ones!
+      </h2>
+      <p class="hero-sub">Enjoy cherished meals with loved ones, savoring every bite and creating precious memories
+        together.</p>
+      <div class="hero-actions">
+        <a href="menu.html" class="pill-btn filled">Order Now</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-frame main-photo">
+        <img src="person.png" alt="Person dining" class="hero-img" />
+      </div>
+
+      <div class="hero-img-frame small-photo">
+        <img src="clo2.jpeg" alt="Dish closeup" class="hero-img" />
+      </div>
+
+      <div class="hero-img-frame extra-photo">
+        <img src="clo4.jpeg" alt="Dish accent" class="hero-img" />
+      </div>
+
+      <div class="hero-float-card food-card" role="note">
+        <img src="sandwich.jpg" alt="Sandwich" class="food-thumb" />
+        <div class="food-info">
+          <div class="food-title">Sandwich <span class="rating">4.5 ★</span></div>
+          <p class="food-desc">Fresh, layered, and toasted to perfection — a sandwich packed with flavor for a
+            satisfying bite.</p>
+        </div>
+      </div>
+
+      <div class="hero-decor sketch-bottom" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-dot"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- SIGNATURE SELECTIONS (Creative Expanding Gallery) -->
+  <section class="signature-section interactive-gallery">
+    <div class="sig-header text-center">
+      <p class="label-text">Curated Selections</p>
+      <h2>Signature <em>Experiences</em></h2>
+      <p class="sig-subtitle">Hover to reveal the artistry behind our most beloved creations.</p>
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery-panel active"
+        style="background-image: url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=1000&q=80');">
+        <div class="panel-overlay"></div>
+        <div class="panel-content">
+          <div class="panel-time">07:00 AM</div>
+          <h3>The Golden Latte</h3>
+          <p>Single-origin roast meets organic turmeric and clover honey. A warm embrace of morning light in every sip.
+          </p>
+          <a href="menu.html" class="pill-btn outline-light panel-btn">Story of the Brew</a>
+        </div>
+        <div class="panel-title-vertical">The Golden Latte</div>
+      </div>
+
+      <div class="gallery-panel"
+        style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&q=80');">
+        <div class="panel-overlay"></div>
+        <div class="panel-content">
+          <div class="panel-time">11:00 AM</div>
+          <h3>Velvet Pour-Over</h3>
+          <p>Ethically sourced Ethiopian beans, brewed slowly to extract floral and citrus notes. Pure clarity.</p>
+          <a href="menu.html" class="pill-btn outline-light panel-btn">Discover Origin</a>
+        </div>
+        <div class="panel-title-vertical">Velvet Pour-Over</div>
+      </div>
+
+      <div class="gallery-panel"
+        style="background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=1000&q=80');">
+        <div class="panel-overlay"></div>
+        <div class="panel-content">
+          <div class="panel-time">03:00 PM</div>
+          <h3>Midnight Matcha</h3>
+          <p>Ceremonial grade matcha blended with a touch of Madagascar vanilla and oat milk. The perfect afternoon
+            calm.</p>
+          <a href="menu.html" class="pill-btn outline-light panel-btn">Taste the Zen</a>
+        </div>
+        <div class="panel-title-vertical">Midnight Matcha</div>
+      </div>
+
+      <div class="gallery-panel"
+        style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1000&q=80');">
+        <div class="panel-overlay"></div>
+        <div class="panel-content">
+          <div class="panel-time">07:00 PM</div>
+          <h3>Ember Negroni</h3>
+          <p>Infused butterfly pea tea replacing gin with our cold-brew espresso martini base. The spirit of the night.
+          </p>
+          <a href="menu.html" class="pill-btn outline-light panel-btn">View Night Menu</a>
+        </div>
+        <div class="panel-title-vertical">Ember Negroni</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AESTHETIC SPACE SECTION -->
+  <section class="aesthetic-space">
+    <div class="as-left">
+      <p class="label-text">The Atmosphere</p>
+      <h2 class="as-title">
+        Designed for Creators, <br>
+        <span class="as-serif">Claimed by</span>
+        <span class="as-script">Dreamers</span>
+      </h2>
+      <p class="as-desc">Our space evolves with your day. From the crisp focus of morning light to the warm, jazz-filled
+        festivity of the night. Every corner is meticulously crafted for inspiration and connection.</p>
+      <a href="about.html" class="pill-btn outline">Explore The Space</a>
+    </div>
+
+    <div class="as-right">
+      <div class="as-image-wrap arch-frame">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1000&q=80" alt="Cafe interior"
+          class="as-img-main" />
+      </div>
+
+      <div class="as-image-wrap float-frame fade-in">
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&q=80" alt="Coffee detail"
+          class="as-img-sub" />
+      </div>
+
+      <div class="as-stamp">
+        <svg viewBox="0 0 100 100" class="rotating-text">
+          <path id="curve" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+          <text>
+            <textPath href="#curve">EST. 2019 • LUXE & EMBER • NEW DELHI • </textPath>
+          </text>
+        </svg>
+        <div class="stamp-center">✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOOD RECOMMENDER (Aesthetic Glass Slider) -->
+  <section class="aesthetic-mood" id="mood-section">
+    <div class="am-container">
+
+      <!-- Left: Obvious Buttons -->
+      <div class="am-left">
+        <p class="label-text">Sensory Menu</p>
+        <h2 class="am-title">How are you <em>feeling?</em></h2>
+        <p class="mood-sub" style="margin-bottom: 2rem;">Select your state of mind.</p>
+
+        <div class="am-buttons">
+          <button class="am-btn active" data-target="tired">
+            <span class="am-icon">⚡</span>
+            <div class="am-btn-text">
+              <strong>Fatigued</strong>
+              <span>Need a spark?</span>
+            </div>
+          </button>
+
+          <button class="am-btn" data-target="sad">
+            <span class="am-icon">💙</span>
+            <div class="am-btn-text">
+              <strong>Melancholic</strong>
+              <span>Need comfort?</span>
+            </div>
+          </button>
+
+          <button class="am-btn" data-target="happy">
+            <span class="am-icon">✨</span>
+            <div class="am-btn-text">
+              <strong>Celebratory</strong>
+              <span>Feeling golden?</span>
+            </div>
+          </button>
+
+          <button class="am-btn" data-target="stressed">
+            <span class="am-icon">🌿</span>
+            <div class="am-btn-text">
+              <strong>Stressed</strong>
+              <span>Need to breathe?</span>
+            </div>
+          </button>
+
+          <button class="am-btn" data-target="cold">
+            <span class="am-icon">🔥</span>
+            <div class="am-btn-text">
+              <strong>Seeking Warmth</strong>
+              <span>Feeling cold?</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Glassmorphism Display -->
+      <div class="am-right">
+
+        <div class="am-panel active" id="am-tired">
+          <div class="am-image-box">
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=800&q=80" alt="Espresso">
+          </div>
+          <div class="am-info-box">
+            <p class="label-text">The Antidote</p>
+            <h3>Double Ember Espresso</h3>
+            <p>A pure, unadulterated shock to the senses. Bold notes of dark chocolate and toasted hazelnut, crowned
+              with a rich crema.</p>
+            <div class="am-price-row">
+              <span class="am-price">₹200</span>
+              <a href="menu.html" class="pill-btn outline">Discover</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="am-panel" id="am-sad">
+          <div class="am-image-box">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=80" alt="Mocha">
+          </div>
+          <div class="am-info-box">
+            <p class="label-text">The Comfort</p>
+            <h3>Warm Dark Mocha</h3>
+            <p>Rich Belgian chocolate melting into our smooth house blend. A warm, velvety hug in a cup.</p>
+            <div class="am-price-row">
+              <span class="am-price">₹260</span>
+              <a href="menu.html" class="pill-btn outline">Discover</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="am-panel" id="am-happy">
+          <div class="am-image-box">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800&q=80" alt="Latte">
+          </div>
+          <div class="am-info-box">
+            <p class="label-text">The Reward</p>
+            <h3>Rose Gold Latte</h3>
+            <p>Our most luxurious creation. Espresso infused with delicate rose water and topped with gold-dusted foam.
+            </p>
+            <div class="am-price-row">
+              <span class="am-price">₹320</span>
+              <a href="menu.html" class="pill-btn outline">Discover</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="am-panel" id="am-stressed">
+          <div class="am-image-box">
+            <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=800&q=80" alt="Matcha">
+          </div>
+          <div class="am-info-box">
+            <p class="label-text">The Calm</p>
+            <h3>Matcha Serenity</h3>
+            <p>Ceremonial grade matcha whisked with chamomile and coconut milk. Earthy, grounding, and deeply centring.
+            </p>
+            <div class="am-price-row">
+              <span class="am-price">₹310</span>
+              <a href="menu.html" class="pill-btn outline">Discover</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="am-panel" id="am-cold">
+          <div class="am-image-box">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80" alt="Chai">
+          </div>
+          <div class="am-info-box">
+            <p class="label-text">The Fire</p>
+            <h3>Spiced Ember Chai</h3>
+            <p>A slow-simmered infusion of cinnamon, star anise, ginger, and cardamom. Warming from the inside out.</p>
+            <div class="am-price-row">
+              <span class="am-price">₹230</span>
+              <a href="menu.html" class="pill-btn outline">Discover</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURATED PAIRINGS SECTION -->
+  <section class="pairings-section" id="pairings">
+    <div class="pairings-header text-center">
+      <p class="label-text">The Perfect Match</p>
+      <h2>Curated <em>Pairings</em></h2>
+      <p class="sig-subtitle" style="margin-bottom: 4rem;">Discover flavor harmonies crafted by our master barista and pastry chef.</p>
+    </div>
+
+    <div class="pairings-carousel">
+      
+      <!-- Slide 1 -->
+      <div class="p-slide active" data-index="0">
+        <div class="ps-side ps-left">
+          <div class="ps-img-wrap">
+            <img src="pour_over.png" alt="Pour Over">
+          </div>
+          <div class="ps-tag">The Brew</div>
+          <h3>Ethiopian Pour-Over</h3>
+        </div>
+
+        <div class="ps-center">
+          <div class="ps-connection">
+            <div class="ps-line"></div>
+            <div class="ps-plus"><i class="fas fa-plus"></i></div>
+            <div class="ps-line"></div>
+          </div>
+          <div class="ps-info">
+            <h4>The Morning Ritual</h4>
+            <p>Bright, floral acidity of the coffee cuts perfectly through the rich, buttery layers of the fresh croissant.</p>
+            <span class="ps-price">₹450</span>
+          </div>
+        </div>
+
+        <div class="ps-side ps-right">
+          <div class="ps-img-wrap">
+            <img src="croissant.png" alt="Croissant">
+          </div>
+          <div class="ps-tag">The Bite</div>
+          <h3>Butter Croissant</h3>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="p-slide" data-index="1">
+        <div class="ps-side ps-left">
+          <div class="ps-img-wrap">
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=800&q=80" alt="Espresso">
+          </div>
+          <div class="ps-tag">The Brew</div>
+          <h3>Ember Espresso</h3>
+        </div>
+
+        <div class="ps-center">
+          <div class="ps-connection">
+            <div class="ps-line"></div>
+            <div class="ps-plus"><i class="fas fa-plus"></i></div>
+            <div class="ps-line"></div>
+          </div>
+          <div class="ps-info">
+            <h4>Midnight Indulgence</h4>
+            <p>A shot of intense dark roast paired with dense chocolate truffle. A decadent, velvety experience.</p>
+            <span class="ps-price">₹550</span>
+          </div>
+        </div>
+
+        <div class="ps-side ps-right">
+          <div class="ps-img-wrap">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80" alt="Chocolate Cake">
+          </div>
+          <div class="ps-tag">The Bite</div>
+          <h3>Dark Truffle Slice</h3>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="p-slide" data-index="2">
+        <div class="ps-side ps-left">
+          <div class="ps-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&q=80" alt="Matcha">
+          </div>
+          <div class="ps-tag">The Brew</div>
+          <h3>Ceremonial Matcha</h3>
+        </div>
+
+        <div class="ps-center">
+          <div class="ps-connection">
+            <div class="ps-line"></div>
+            <div class="ps-plus"><i class="fas fa-plus"></i></div>
+            <div class="ps-line"></div>
+          </div>
+          <div class="ps-info">
+            <h4>The Zenith Pair</h4>
+            <p>Earthy, grounding matcha balanced perfectly by the delicate, tangy sweetness of a fresh raspberry tart.</p>
+            <span class="ps-price">₹520</span>
+          </div>
+        </div>
+
+        <div class="ps-side ps-right">
+          <div class="ps-img-wrap">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800&q=80" alt="Raspberry Tart">
+          </div>
+          <div class="ps-tag">The Bite</div>
+          <h3>Raspberry Tart</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="pairings-nav">
+      <button class="pn-btn" id="pnPrev"><i class="fas fa-chevron-left"></i></button>
+      <div class="pn-dots">
+        <span class="pn-dot active" data-index="0"></span>
+        <span class="pn-dot" data-index="1"></span>
+        <span class="pn-dot" data-index="2"></span>
+      </div>
+      <button class="pn-btn" id="pnNext"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- LUXE COMMUNITY SECTION (The Guestbook Reel) -->
+  <section class="reviews-section" id="community">
+    <div class="reviews-container">
+      <div class="reviews-header">
+        <div class="rh-left">
+          <p class="label-text">The Social Fabric</p>
+          <h2 class="section-title">The <em>Guestbook</em></h2>
+        </div>
+        <div class="rh-right">
+          <p class="section-subtitle">Real stories from our daily guests and community.</p>
+        </div>
+      </div>
+
+      <div class="guestbook-wrap">
+        <button class="sr-nav-btn prev" id="gbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="sr-nav-btn next" id="gbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        
+        <div class="guestbook-reel" id="guestbookReel">
+          <!-- Note 1 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=200&q=80" alt="Coffee"></div>
+            <div class="note-body">
+              <p class="note-text">"Found my go-to spot for sourdough. Staff is super sweet too. 10/10 vibe for morning work."</p>
+              <div class="note-footer">
+                <span class="note-sig">Riya Malhotra</span>
+                <span class="note-meta">Verified Guest · Morning Regular</span>
+              </div>
+            </div>
+            <div class="note-coffee-stain"></div>
+          </div>
+
+          <!-- Note 2 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=200&q=80" alt="Vibe"></div>
+            <div class="note-body">
+              <p class="note-text">"Proper flat white. Finally. Luxe & Ember is definitely the best kept secret in Delhi."</p>
+              <div class="note-footer">
+                <span class="note-sig">Arjun Singh</span>
+                <span class="note-meta">Verified Guest · Weekly Visitor</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note 3 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=200&q=80" alt="Dessert"></div>
+            <div class="note-body">
+              <p class="note-text">"Vibe is magic but gets crowded on weekends. Go early if you want a quiet corner!"</p>
+              <div class="note-footer">
+                <span class="note-sig">Sarah K.</span>
+                <span class="note-meta">Community Member</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note 4 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80" alt="Profile"></div>
+            <div class="note-body">
+              <p class="note-text">"The Golden Latte is actually worth the hype. Perfect for a rainy day ritual."</p>
+              <div class="note-footer">
+                <span class="note-sig">Sofia</span>
+                <span class="note-meta">Daily Regular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note 5 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Profile"></div>
+            <div class="note-body">
+              <p class="note-text">"My second home. The only place where I can actually get deep creative work done."</p>
+              <div class="note-footer">
+                <span class="note-sig">Julian V.</span>
+                <span class="note-meta">Architect · Regular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note 6 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200&q=80" alt="Pastry"></div>
+            <div class="note-body">
+              <p class="note-text">"The almond croissants are actually dangerous. I come for one and leave with three every time."</p>
+              <div class="note-footer">
+                <span class="note-sig">Kabir Sethi</span>
+                <span class="note-meta">Verified Guest · Weekend Foodie</span>
+              </div>
+            </div>
+            <div class="note-coffee-stain" style="top: auto; bottom: -30px; left: auto; right: -20px;"></div>
+          </div>
+
+          <!-- Note 7 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1534528741775-53994a42bc5e?w=200&q=80" alt="Vibe"></div>
+            <div class="note-body">
+              <p class="note-text">"L&E at night is a whole different beast. The candle-lit cocktails are just... magic."</p>
+              <div class="note-footer">
+                <span class="note-sig">Meera R.</span>
+                <span class="note-meta">Evening Regular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note 8 -->
+          <div class="guest-note">
+            <div class="note-stamp"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80" alt="Staff"></div>
+            <div class="note-body">
+              <p class="note-text">"It's the hospitality for me. They actually remembered my coffee order on the second visit."</p>
+              <div class="note-footer">
+                <span class="note-sig">Rahul J.</span>
+                <span class="note-meta">Verified Guest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="guestbook-nav">
+        <div class="gb-progress"><div class="gb-bar" id="gbBar"></div></div>
+        <div class="gb-hint">Drag to browse the guestbook</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <p class="label-text light">Reservations</p>
+      <h2>Begin Your Journey<br /><em>Between Hours</em></h2>
+      <p>Join us for a morning roast or an evening toast. Every hour is the golden hour at Luxe & Ember.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="pill-btn filled-dark">Book a Table</a>
+        <a href="menu.html" class="pill-btn outline-light">Explore Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo">Luxe & Ember</p>
+        <p class="footer-tagline">Redefining café culture. Open from dawn to deep into the night.</p>
+        <p class="footer-est">Established 2019</p>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-nav-title">Navigate</p>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Our Blog</a>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-nav-title">Connect</p>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Spotify</a>
+        <a href="#">Newsletter</a>
+      </div>
+      <div class="footer-nav">
+        <p class="footer-nav-title">Address</p>
+        <p class="footer-addr">12, Inner Circle<br />Connaught Place<br />New Delhi - 110001</p>
+        <p class="footer-addr"><i class="fas fa-phone" style="margin-right:8px;font-size:0.8rem;color:var(--accent)"></i>+91 11 4355 6677</p>
+        <p class="footer-addr">Mon–Sun: 8AM – 11:30PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Luxe & Ember. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-wrap" id="chatbot">
+    <button class="chat-fab" id="chatToggle">
+      <i class="fas fa-comment-dots"></i>
+      <span class="fab-ping"></span>
+    </button>
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-head">
+        <div class="chat-av">☕</div>
+        <div>
+          <p class="chat-n">Ember</p>
+          <p class="chat-s">Café Assistant · Online</p>
+        </div>
+        <button class="chat-x" id="chatClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-msgs" id="chatMsgs">
+        <div class="cmsg bot">
+          <p>Welcome to Luxe & Ember ✨ Ask me about our <strong>menu</strong>, <strong>hours</strong>,
+            <strong>location</strong>, or <strong>booking</strong>!</p>
+        </div>
+      </div>
+      <div class="chat-inp">
+        <input type="text" id="chatInput" placeholder="Ask me anything…" />
+        <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODE TOGGLE FLOATING (like Aura Café) -->
+  <button class="mode-float" id="modeFloat">
+    <i class="fas fa-sun" id="modeFloatIcon"></i>
+    <span id="modeFloatText">Switch to Night</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

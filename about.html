@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Story | Luxe & Ember Café — Two Worlds, One Glass Door</title>
+  <meta name="description" content="Discover the philosophy behind Luxe & Ember. A story of artisanal balance, architectural contrast, and the seven-year journey of a beloved sanctuary."/>
+  <meta name="keywords" content="Luxe & Ember story, cafe history, architectural cafe, boutique cafe philosophy"/>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Story | Luxe & Ember Café" />
+  <meta property="og:description" content="Two worlds. One glass door. The journey of Luxe & Ember." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1200&q=80" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand">Luxe & Ember</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Table</a></li>
+  </ul>
+  <a href="tel:+911143556677" class="nav-phone"><i class="fas fa-phone"></i><span>+91 11 4355 6677</span></a>
+  <button class="mode-toggle" id="modeToggle"><i class="fas fa-sun" id="modeIcon"></i></button>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ABOUT HERO — Like Aura's "Two Worlds, One Glass Door" -->
+<section class="about-hero">
+  <div class="about-hero-bg-text">LUXE&amp;CAFÉ</div>
+  <div class="about-hero-decor-left">✦</div>
+  <div class="about-hero-decor-right">✦</div>
+  <div class="about-hero-content">
+    <p class="eyebrow fade-in">Since 2019</p>
+    <h1 class="about-headline fade-in">Two Worlds,<br/><em>One Glass Door.</em></h1>
+    <div class="about-divider"></div>
+    <p class="about-intro fade-in">A choreography of light and shadow. From the first steam of an espresso at dawn to the last citrus twist in a midnight cocktail, our space lives twice.</p>
+    <div class="about-metrics fade-in">
+      <div class="about-metric">
+        <span>Dual Mood</span>
+        <strong>Day + Night</strong>
+      </div>
+      <div class="about-metric">
+        <span>Craft Focus</span>
+        <strong>Roast + Pour</strong>
+      </div>
+      <div class="about-metric">
+        <span>Atmosphere</span>
+        <strong>Warm + Cinematic</strong>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+<!-- DAY/NIGHT TOGGLE SECTION (like Aura "Feel the Shift") -->
+<section class="shift-section">
+  <div class="shift-header">
+    <div class="shift-heading">
+      <p class="section-kicker">Dual Atmosphere</p>
+      <h2>Feel the <em>Shift</em></h2>
+      <p class="shift-intro">A two-act composition where mornings stay focused and nights turn cinematic.</p>
+    </div>
+    <div class="shift-tabs">
+      <button class="shift-tab active" data-shift="day">Daytime</button>
+      <button class="shift-tab" data-shift="night">Afterdark</button>
+    </div>
+  </div>
+
+  <!-- DAY PANEL -->
+  <div class="shift-panel day-panel active" id="dayPanel">
+    <div class="shift-grid">
+      <div class="shift-img-main">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&q=80" alt="Daytime café"/>
+        <div class="shift-time-badge">
+          <span class="time-num">08:00 AM</span>
+          <span class="time-sub">"The Awakening of the Senses"</span>
+        </div>
+      </div>
+      <div class="shift-text">
+        <p class="shift-quote">Morning here feels edited, not crowded.</p>
+        <h3>The Ritual of Dawn</h3>
+        <p>The morning begins with a soft amber glow spilling across our oak tables. There is a specific rhythm to the dawn: the mechanical hum of the grinder, the scent of fresh cardamom buns, and the quiet tapping of keyboards.</p>
+        <p>In Day Mode, Luxe & Ember is a sanctuary for the focused mind and the early riser. It is a space where the air is light, and the coffee is dark.</p>
+        <div class="shift-detail">
+          <span>☀️ Day Phase</span>
+          <span class="shift-hours">08:00 — 16:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NIGHT PANEL -->
+  <div class="shift-panel night-panel" id="nightPanel">
+    <div class="shift-grid reverse">
+      <div class="shift-text">
+        <p class="shift-quote night-quote">After dark, the room becomes a quiet performance.</p>
+        <h3>The Alchemical Hour</h3>
+        <p>As the sun dips below the skyline, the shadows of the palms grow long and the neon flickers to life. The warmth of the coffee wood deepens into a rich, purple-tinted obsidian.</p>
+        <p>Night Mode is where conversation flows faster and the music grows louder. The workspace dissolves into a social lounge where crystal glassware catches the sapphire pulse of the night.</p>
+        <div class="shift-detail night-detail">
+          <span>🌙 Night Phase</span>
+          <span class="shift-hours">16:00 — 02:00</span>
+        </div>
+      </div>
+      <div class="shift-img-main">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=90&fm=jpg&fit=crop" alt="Nighttime café"/>
+        <div class="shift-time-badge night-badge">
+          <span class="time-num">08:00 PM</span>
+          <span class="time-sub">"The Alchemy of Nocturnal Life"</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+<!-- ONE ARCHITECTURE TWO SOULS GRID -->
+<section class="architecture-section">
+  <div class="architecture-heading">
+    <p class="section-kicker">Architectural Contrast</p>
+    <h2>One Architecture, <em>Two Souls</em></h2>
+    <p>The same frame carries two moods: daylight precision and nocturnal glow, balanced in one spatial language.</p>
+  </div>
+  <div class="arch-grid">
+    <div class="arch-main-img">
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80" alt="Café architecture"/>
+      <div class="arch-label">One Architecture, Two Souls</div>
+    </div>
+    <div class="arch-side">
+      <div class="arch-card">
+        <span class="arch-icon">✦</span>
+        <h4>Artisanal Balance</h4>
+        <p>Precision roasting by day. Alchemical mixology by night. Our craft adapts with the solar cycle.</p>
+        <div class="arch-chip-row">
+          <span>Light</span>
+          <span>Shadow</span>
+          <span>Craft</span>
+        </div>
+      </div>
+      <div class="arch-side-img">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1400&q=92&fm=jpg&fit=crop" alt="Coffee and café details"/>
+      </div>
+      <div class="arch-note">
+        <strong>Designed to shift, not just serve.</strong>
+        <p>Materials stay warm. Lines stay clean. The atmosphere changes with intention.</p>
+      </div>
+      <div class="arch-decor">
+        <span class="arch-decor-orb orb-1"></span>
+        <span class="arch-decor-orb orb-2"></span>
+        <span class="arch-decor-leaf leaf-1">❦</span>
+        <span class="arch-decor-leaf leaf-2">✿</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section">
+  <div class="timeline-header">
+    <p class="label-text">Our Journey</p>
+    <h2>The <em>Ember</em> Timeline</h2>
+    <p class="timeline-intro">From a napkin sketch to a beloved sanctuary—seven years of passion, craft, and transformation.</p>
+  </div>
+  <div class="timeline-layout">
+    <div class="timeline-list">
+      <div class="tl-item fade-in">
+        <div class="tl-year">2019</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content"><h4>The Dream Begins</h4><p>Founders Aryan and Meera sketch the first blueprint on a café napkin at Connaught Place.</p><span class="tl-tag">Inspiration</span></div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">2020</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content"><h4>First Cup Served</h4><p>Despite the odds, we opened in October 2020. First customer still comes every Tuesday.</p><span class="tl-tag">Launch</span></div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">2022</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content"><h4>10,000 Happy Guests</h4><p>Celebrated with our Golden Brew — gifted free to every guest that day.</p><span class="tl-tag">Milestone</span></div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">2024</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content"><h4>Luxe & Ember Reborn</h4><p>New menu, reimagined space, and our dual-soul sanctuary concept launched.</p><span class="tl-tag">Evolution</span></div>
+      </div>
+    </div>
+    <div class="timeline-aside">
+      <div class="timeline-decor">
+        <div class="decor-frame"></div>
+        <div class="decor-grid"></div>
+                <div class="decor-content">
+                  <h3 class="decor-title">By The Numbers</h3>
+                  <div class="decor-stat">
+                    <span class="stat-num">7</span>
+                    <span class="stat-label">Years of Craft</span>
+                  </div>
+                  <div class="decor-stat">
+                    <span class="stat-num">10K+</span>
+                    <span class="stat-label">Happy Guests</span>
+                  </div>
+                  <div class="decor-stat">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">Soul Modes</span>
+                  </div>
+                  <p class="decor-quote">"From napkin sketch to beloved sanctuary."</p>
+                </div>
+        <span class="decor-orb orb-1"></span>
+        <span class="decor-orb orb-2"></span>
+        <span class="decor-orb orb-3"></span>
+        <span class="decor-orb orb-4"></span>
+        <span class="decor-accent accent-1"></span>
+        <span class="decor-accent accent-2"></span>
+        <span class="decor-leaf leaf-1">❦</span>
+        <span class="decor-leaf leaf-2">✿</span>
+        <span class="decor-leaf leaf-3">❋</span>
+        <span class="decor-leaf leaf-4">❦</span>
+        <span class="decor-leaf leaf-5">✿</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- STEP INSIDE LIVING SPACE (like Aura) -->
+<section class="living-section">
+  <div class="living-inner">
+    <h2>Step Inside Our<br/><em>Living Space</em></h2>
+    <p>Experience the seamless transition. Whether you're seeking focus or festivity, Luxe & Ember is your constant.</p>
+    <div class="living-btns">
+      <a href="contact.html" class="pill-btn filled">Day Visit</a>
+      <a href="contact.html" class="pill-btn outline-dark">Night Reserve</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- MEET THE TEAM -->
+<section class="team-section">
+  <p class="label-text" style="text-align:center">The Craft Behind the Cup</p>
+  <h2 style="text-align:center;font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:3rem">Meet Our <em>Baristas</em></h2>
+  <div class="team-grid">
+    <div class="team-card fade-in">
+      <div class="team-img"><img src="https://i.pravatar.cc/300?img=11" alt="Aryan Kapoor"/><div class="team-overlay"><p>"Coffee is my canvas."</p></div></div>
+      <h4>Aryan Kapoor</h4><span>Head Barista & Co-founder</span>
+      <p>Trained in Milan, Aryan brings Italian precision to Indian sensibilities.</p>
+    </div>
+    <div class="team-card fade-in">
+      <div class="team-img"><img src="https://i.pravatar.cc/300?img=5" alt="Meera Sharma"/><div class="team-overlay"><p>"Every bite is a memory."</p></div></div>
+      <h4>Meera Sharma</h4><span>Pastry Chef & Co-founder</span>
+      <p>Le Cordon Bleu graduate, Meera crafts desserts that tell stories.</p>
+    </div>
+    <div class="team-card fade-in">
+      <div class="team-img"><img src="https://i.pravatar.cc/300?img=33" alt="Rohan Verma"/><div class="team-overlay"><p>"Science meets soul."</p></div></div>
+      <h4>Rohan Verma</h4><span>Brew Master</span>
+      <p>A chemistry graduate turned coffee scientist — perfecting every extraction.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHATBOT -->
+<div class="chatbot-wrap" id="chatbot">
+  <button class="chat-fab" id="chatToggle"><i class="fas fa-comment-dots"></i><span class="fab-ping"></span></button>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-head">
+      <div class="chat-av">☕</div>
+      <div><p class="chat-n">Ember</p><p class="chat-s">Café Assistant · Online</p></div>
+      <button class="chat-x" id="chatClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs">
+      <div class="cmsg bot"><p>Welcome to Luxe & Ember ✨ Ask me about our <strong>menu</strong>, <strong>hours</strong>, <strong>location</strong>, or <strong>booking</strong>!</p></div>
+    </div>
+    <div class="chat-inp">
+      <input type="text" id="chatInput" placeholder="Ask me anything…"/>
+      <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<button class="mode-float" id="modeFloat"><i class="fas fa-sun" id="modeFloatIcon"></i><span id="modeFloatText">Switch to Night</span></button>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand"><p class="footer-logo">Luxe & Ember</p><p class="footer-tagline">Redefining café culture. Open from dawn to deep into the night.</p><p class="footer-est">Established 2019</p></div>
+    <div class="footer-nav"><p class="footer-nav-title">Navigate</p><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="contact.html">Book</a></div>
+    <div class="footer-nav"><p class="footer-nav-title">Connect</p><a href="#">Instagram</a><a href="#">Twitter</a><a href="#">Spotify</a><a href="#">Newsletter</a></div>
+    <div class="footer-nav"><p class="footer-nav-title">Address</p><p class="footer-addr">12, Inner Circle<br/>Connaught Place<br/>New Delhi - 110001</p><p class="footer-addr"><i class="fas fa-phone" style="margin-right:8px;font-size:0.8rem;color:var(--accent)"></i>+91 11 4355 6677</p><p class="footer-addr">Mon–Sun: 8AM – 2AM</p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Luxe & Ember. All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
